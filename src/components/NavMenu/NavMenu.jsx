@@ -32,7 +32,7 @@ const NavMenu = () => {
     };
 
     const handleNavigate = (url) => {
-        console.log(url);
+        handleCloseNavMenu();
         navigate(url);
     };
 
