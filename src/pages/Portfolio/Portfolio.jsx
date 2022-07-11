@@ -48,6 +48,14 @@ export default function Portfolio() {
                             live={project.live}
                             title={project.title}
                         />
+                        <Box display={{ md: "none" }}>
+                            <hr
+                                style={{
+                                    width: "75%",
+                                    border: "1px solid grey",
+                                }}
+                            />
+                        </Box>
                     </Grid>
                 ))}
             </Grid>
