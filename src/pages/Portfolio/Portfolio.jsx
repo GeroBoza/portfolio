@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioBlock from "./PortfolioBlock";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 export default function Portfolio() {
     const portfolio = [
@@ -22,6 +22,18 @@ export default function Portfolio() {
     ];
     return (
         <Box>
+            <Box display={{ sm: "none" }}>
+                <Typography
+                    variant="h4"
+                    fontSize={"22pt"}
+                    color="white"
+                    fontWeight={"bold"}
+                    textAlign={"center"}
+                >
+                    PORTFOLIO
+                </Typography>
+                <hr style={{ width: "75%", border: "1px solid grey" }} />
+            </Box>
             <Grid
                 container
                 height={"90vh"}

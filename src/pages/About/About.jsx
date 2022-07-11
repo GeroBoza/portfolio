@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Terminal from "../../components/Terminal/Terminal";
@@ -121,16 +122,30 @@ const About = () => {
     // }
 
     return (
-        <Box
-            display={"flex"}
-            flexDirection={"column"}
-            alignItems={"center"}
-            mt={"3rem"}
-        >
-            <Terminal text={aboutMeText()} />
-            <Terminal text={skillsText()} />
-            {/* 
+        <Box>
+            <Box display={{ sm: "none" }}>
+                <Typography
+                    variant="h4"
+                    fontSize={"22pt"}
+                    color="white"
+                    fontWeight={"bold"}
+                    textAlign={"center"}
+                >
+                    ABOUT
+                </Typography>
+                <hr style={{ width: "75%", border: "1px solid grey" }} />
+            </Box>
+            <Box
+                display={"flex"}
+                flexDirection={"column"}
+                alignItems={"center"}
+                mt={"3rem"}
+            >
+                <Terminal text={aboutMeText()} />
+                <Terminal text={skillsText()} />
+                {/* 
             <Terminal text={miscText()} /> */}
+            </Box>
         </Box>
     );
 };
