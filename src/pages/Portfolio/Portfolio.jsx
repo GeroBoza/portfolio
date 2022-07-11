@@ -4,9 +4,21 @@ import { Box, Grid } from "@mui/material";
 
 export default function Portfolio() {
     const portfolio = [
-        { image: "/img/mock1.png", live: "", title: "Project 1" },
-        { image: "/img/mock2.png", live: "", title: "Project 2" },
-        { image: "/img/mock3.png", live: "", title: "Project 3" },
+        {
+            image: "/img/mock1.png",
+            live: "https://www.zapateriaavenida.com/",
+            title: "Project 1",
+        },
+        {
+            image: "/img/mock2.png",
+            live: "http://estudiopereyra.com.ar/",
+            title: "Project 2",
+        },
+        {
+            image: "/img/mock3.png",
+            live: "https://www.alianzafrancesalp.org.ar/",
+            title: "Project 3",
+        },
     ];
     return (
         <Box>

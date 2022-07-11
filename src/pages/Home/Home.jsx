@@ -23,7 +23,7 @@ const Home = () => {
                             alt=""
                         />
                     </Grid>
-                    <Grid item xs={7} md={4} className="myInfo">
+                    <Grid item xs={12} md={4} className="myInfo">
                         <Box>
                             <Typography variant="h3">
                                 Hi, I'm <span className="name">Geronimo</span>!{" "}
