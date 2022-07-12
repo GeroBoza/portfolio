@@ -5,19 +5,19 @@ import { Box, Grid, Typography } from "@mui/material";
 export default function Portfolio() {
     const portfolio = [
         {
-            image: "/img/mock1.png",
+            image: "/img/zapateriaavenida.png",
             live: "https://www.zapateriaavenida.com/",
-            title: "Project 1",
+            title: "Zapatería Avenida",
         },
         {
-            image: "/img/mock2.png",
+            image: "/img/estudiopereyra.png",
             live: "http://estudiopereyra.com.ar/",
-            title: "Project 2",
+            title: "Estudio Pereyra",
         },
         {
-            image: "/img/mock3.png",
+            image: "/img/alianzafrancesa.png",
             live: "https://www.alianzafrancesalp.org.ar/",
-            title: "Project 3",
+            title: "Alianza Francesa",
         },
     ];
     return (
