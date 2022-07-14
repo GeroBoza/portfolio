@@ -35,10 +35,14 @@ const About = () => {
                 <p style={{ textAlign: "justify" }}>
                     {/* n */}
                     Hello! I'm Geronimo. I am an advanced student at the
-                    National University of La Plata, Buenos Aires, Argentina. I
-                    enjoy long walks on the beach, and I believe artificial
-                    intelligence will inevitably rule us all one day. You should
-                    hire me!
+                    National University of La Plata, Buenos Aires, Argentina.
+                </p>
+                <p style={{ textAlign: "justify" }}>
+                    I like to develop both frontend and backend.
+                </p>
+                <p style={{ textAlign: "justify" }}>
+                    At this moment I am improving in ReactJs but I am a person
+                    willing to face new challenges
                 </p>
             </>
         );
