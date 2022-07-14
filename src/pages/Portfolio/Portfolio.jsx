@@ -42,7 +42,7 @@ export default function Portfolio() {
                 justifyContent={"center"}
             >
                 {portfolio.map((project) => (
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} key={project.title}>
                         <PortfolioBlock
                             image={project.image}
                             live={project.live}

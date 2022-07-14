@@ -1,4 +1,4 @@
-import * as React from "react";
+import { React, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,14 +13,17 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 
+import "./navMenu.scss";
+
 const pages = [
-    { name: "Home", url: "/" },
-    { name: "About me", url: "/about" },
-    { name: "Portfolio", url: "/portfolio" },
+    { name: "Home", url: "/", active: "home" },
+    { name: "About me", url: "/about", active: "about" },
+    { name: "Portfolio", url: "/portfolio", active: "portfolio" },
 ];
 
 const NavMenu = () => {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElNav, setAnchorElNav] = useState(null);
+    const [activeItem, setActiveItem] = useState("home");
     const navigate = useNavigate();
 
     const handleOpenNavMenu = (event) => {
@@ -31,8 +34,9 @@ const NavMenu = () => {
         setAnchorElNav(null);
     };
 
-    const handleNavigate = (url) => {
+    const handleNavigate = (url, active) => {
         handleCloseNavMenu();
+        setActiveItem(active);
         navigate(url);
     };
 
@@ -83,7 +87,12 @@ const NavMenu = () => {
                             {pages.map((page) => (
                                 <MenuItem
                                     key={page.name}
-                                    onClick={() => handleNavigate(page.url)}
+                                    onClick={() =>
+                                        handleNavigate(page.url, page.active)
+                                    }
+                                    // className={
+                                    //     activeItem === page.active && "active"
+                                    // }
                                 >
                                     <Typography textAlign="center">
                                         {page.name}
@@ -103,7 +112,9 @@ const NavMenu = () => {
                         {pages.map((page) => (
                             <Button
                                 key={page.name}
-                                onClick={() => handleNavigate(page.url)}
+                                onClick={() =>
+                                    handleNavigate(page.url, page.active)
+                                }
                                 sx={{
                                     my: 2,
                                     color: "white",
@@ -112,6 +123,13 @@ const NavMenu = () => {
                                 }}
                             >
                                 {page.name}
+                                <div
+                                    className={
+                                        activeItem === page.active
+                                            ? "active"
+                                            : ""
+                                    }
+                                ></div>
                             </Button>
                         ))}
                     </Box>
