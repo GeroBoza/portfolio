@@ -6,7 +6,7 @@ export default function Portfolio() {
     const portfolio = [
         {
             image: "/img/mps.png",
-            live: "https://www.alianzafrancesalp.org.ar/",
+            live: "https://www.mpsencuadernacion.com/",
             title: "MPS Encuadernación",
             description: "(Node.js - Express JS - React JS)",
         },
