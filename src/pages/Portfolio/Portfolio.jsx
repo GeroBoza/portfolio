@@ -5,19 +5,28 @@ import { Box, Grid, Typography } from "@mui/material";
 export default function Portfolio() {
     const portfolio = [
         {
+            image: "/img/mps.png",
+            live: "https://www.alianzafrancesalp.org.ar/",
+            title: "MPS Encuadernación",
+            description: "(Node.js - Express JS - React JS)",
+        },
+        {
             image: "/img/zapateriaavenida.png",
             live: "https://www.zapateriaavenida.com/",
             title: "Zapatería Avenida",
+            description: "(Node.js - Express JS - EJS)",
         },
         {
             image: "/img/estudiopereyra.png",
             live: "http://estudiopereyra.com.ar/",
             title: "Estudio Pereyra",
+            description: "(HTML - CSS - Javascript)",
         },
         {
             image: "/img/alianzafrancesa.png",
             live: "https://www.alianzafrancesalp.org.ar/",
             title: "Alianza Francesa",
+            description: "(HTML - CSS - Javascript)",
         },
     ];
     return (
@@ -40,13 +49,15 @@ export default function Portfolio() {
                 alignItems={"center"}
                 display={"flex"}
                 justifyContent={"center"}
+                spacing={2}
             >
                 {portfolio.map((project) => (
                     <Grid item xs={12} md={4} key={project.title}>
                         <PortfolioBlock
                             image={project.image}
-                            live={project.live}
+                            link={project.live}
                             title={project.title}
+                            description={project.description}
                         />
                         <Box display={{ md: "none" }}>
                             <hr

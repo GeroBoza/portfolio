@@ -1,24 +1,34 @@
 import React from "react";
 import IconLink from "./IconLink";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import "./Portfolio.scss";
 
 function PortfolioBlock(props) {
-    const { image, live, title } = props;
+    const { image, link, title, description } = props;
+
     return (
         <Box
+            className="portfolio-item"
             display={"flex"}
             flexDirection={"column"}
             justifyContent={"center"}
             alignItems={"center"}
+            paddingBottom={"30px"}
         >
-            <Box
-                component={"img"}
-                src={image}
-                alt={"mockup"}
-                sx={{ maxWidth: "100%" }}
-            />
-            <h1 style={{ fontSize: "2rem", color: "white" }}>{title}</h1>
-            <Box
+            <a target="_blank" rel="noreferrer" href={link}>
+                <Box
+                    component={"img"}
+                    src={image}
+                    alt={"mockup"}
+                    sx={{ maxWidth: "100%" }}
+                />
+                <h1 style={{ fontSize: "2rem", color: "white" }}>{title}</h1>
+                <Typography variant="p" color="white">
+                    {description}
+                </Typography>
+            </a>
+
+            {/* <Box
                 className={"portfolio"}
                 display={"flex"}
                 flexDirection={"column"}
@@ -30,12 +40,12 @@ function PortfolioBlock(props) {
             >
                 <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
                     <IconLink
-                        link={live}
+                        link={link}
                         title={"Visit site"}
                         icon={"fa fa-safari"}
                     />
                 </Box>
-            </Box>
+            </Box> */}
         </Box>
     );
 }

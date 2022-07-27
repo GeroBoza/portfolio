@@ -1,0 +1,16 @@
+.portfolio-item {
+    cursor: pointer;
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    a {
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.portfolio-item:hover {
+    top: -10px;
+    background-color: rgba(128, 128, 128, 0.03);
+    border-radius: 5px;
+}
