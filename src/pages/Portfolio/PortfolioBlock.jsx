@@ -1,5 +1,4 @@
 import React from "react";
-import IconLink from "./IconLink";
 import { Box, Typography } from "@mui/material";
 import "./Portfolio.scss";
 
