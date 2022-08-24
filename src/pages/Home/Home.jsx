@@ -7,10 +7,13 @@ import "./Home.scss";
 
 const Home = () => {
     const socialLinks = [
-        { icon: "fa fa-facebook", url: "" },
-        { icon: "fa fa-instagram", url: "" },
-        { icon: "fa fa-github", url: "" },
-        { icon: "fa fa-linkedin", url: "" },
+        { icon: "fa fa-facebook", url: "https://www.facebook.com/gero.boza" },
+        { icon: "fa fa-instagram", url: "https://www.instagram.com/geroboza/" },
+        { icon: "fa fa-github", url: "https://github.com/GeroBoza" },
+        {
+            icon: "fa fa-linkedin",
+            url: "https://www.linkedin.com/in/geronimoboza/",
+        },
     ];
     return (
         <div className="App">
