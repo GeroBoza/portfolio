@@ -48,7 +48,7 @@ const NavMenu = () => {
         } else {
             setActiveItem("home");
         }
-    }, []);
+    }, [location.pathname]);
 
     return (
         <AppBar
