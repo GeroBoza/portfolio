@@ -18,7 +18,7 @@ function PortfolioBlock(props) {
                 <Box
                     component={"img"}
                     src={image}
-                    alt={"mockup"}
+                    alt={title}
                     sx={{ maxWidth: "100%" }}
                 />
                 <h1 style={{ fontSize: "2rem", color: "white" }}>{title}</h1>

@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
 import MenuItem from "@mui/material/MenuItem";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 import "./navMenu.scss";
 
@@ -23,8 +23,9 @@ const pages = [
 
 const NavMenu = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const [activeItem, setActiveItem] = useState("home");
+    const [activeItem, setActiveItem] = useState();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -39,6 +40,15 @@ const NavMenu = () => {
         setActiveItem(active);
         navigate(url);
     };
+
+    useEffect(() => {
+        if (location.pathname !== "/") {
+            const loc = location.pathname.replace("/", "");
+            setActiveItem(loc);
+        } else {
+            setActiveItem("home");
+        }
+    }, []);
 
     return (
         <AppBar
