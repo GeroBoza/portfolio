@@ -5,8 +5,14 @@ import { Box, Grid, Typography } from "@mui/material";
 export default function Portfolio() {
     const portfolio = [
         {
+            image: "/img/starwars.png",
+            live: "https://sw-app-challenge.netlify.app/",
+            title: "Star Wars app Challenge",
+            description: "(Node.js - Express JS - React JS)",
+        },
+        {
             image: "/img/mps.png",
-            live: "https://www.mpsencuadernacion.com/",
+            live: "https://mps-encuadernacion.netlify.app/",
             title: "MPS Encuadernación",
             description: "(Node.js - Express JS - React JS)",
         },

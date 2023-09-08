@@ -32,17 +32,25 @@ const About = () => {
                     </span>{" "}
                     cat aboutgeronimo{" "}
                 </p>
-                <p style={{ textAlign: "justify" }}>
+                <p>
                     {/* n */}
-                    Hello! I'm Geronimo. I am an advanced student at the
-                    National University of La Plata, Buenos Aires, Argentina.
+                    I’m a full-stack developer with 3+ years of experience
+                    focused on web development.
                 </p>
-                <p style={{ textAlign: "justify" }}>
-                    I like to develop both frontend and backend.
+                <p>
+                    A visionary and creative problem solver. An autodidact who
+                    rapidly understand new concepts, ideas, technologies and
+                    methodologies.
                 </p>
-                <p style={{ textAlign: "justify" }}>
-                    At this moment I am improving in ReactJs but I am a person
-                    willing to face new challenges
+                <p>
+                    I've been working as a web developer since 2019. And have
+                    more than 5 years of previous studies in university and side
+                    projects as a self learner. Learning and using technologies
+                    like Git, Javascript, Node, React, MySQL, etc.
+                </p>
+                <p>
+                    Currently, I am focusing my career on web technologies like
+                    React, Node, Express, MySQL.
                 </p>
             </>
         );
