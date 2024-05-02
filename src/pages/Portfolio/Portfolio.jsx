@@ -6,7 +6,7 @@ export default function Portfolio() {
     const portfolio = [
         {
             image: "/img/clara.png",
-            live: "https://clara-asprella.netlify.app/",
+            live: "https://asprella.com/",
             title: "Clara Asprella - Portfolio",
             description: "(Node.js - Express JS - React JS)",
         },
