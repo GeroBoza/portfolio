@@ -5,22 +5,22 @@ import { Box, Grid, Typography } from "@mui/material";
 export default function Portfolio() {
     const portfolio = [
         {
+            image: "/img/clara.png",
+            live: "https://clara-asprella.netlify.app/",
+            title: "Clara Asprella - Portfolio",
+            description: "(Node.js - Express JS - React JS)",
+        },
+        {
             image: "/img/starwars.png",
             live: "https://sw-app-challenge.netlify.app/",
             title: "Star Wars app Challenge",
             description: "(Node.js - Express JS - React JS)",
         },
         {
-            image: "/img/mps.png",
-            live: "https://mps-encuadernacion.netlify.app/",
-            title: "MPS Encuadernación",
-            description: "(Node.js - Express JS - React JS)",
-        },
-        {
             image: "/img/zapateriaavenida.png",
             live: "https://www.zapateriaavenida.com/",
             title: "Zapatería Avenida",
-            description: "(Node.js - Express JS - EJS)",
+            description: "(Node.js - Express JS - React JS)",
         },
         {
             image: "/img/estudiopereyra.png",
