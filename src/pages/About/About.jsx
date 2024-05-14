@@ -10,6 +10,8 @@ const About = () => {
         "react",
         "node.js",
         "express",
+        "aws s3",
+        "nginx",
         "mysql",
         "html",
         "css",
@@ -37,6 +39,7 @@ const About = () => {
                     I’m a full-stack developer with 3+ years of experience
                     focused on web development.
                 </p>
+
                 <p>
                     A visionary and creative problem solver. An autodidact who
                     rapidly understand new concepts, ideas, technologies and
@@ -94,44 +97,65 @@ const About = () => {
         );
     }
 
-    // function miscText() {
-    //     return (
-    //         <>
-    //             <p>
-    //                 <span
-    //                     style={{
-    //                         color: "#03ffa4",
-    //                     }}
-    //                 >
-    //                     {firstName}
-    //                     {info.lastName.toLowerCase()} $
-    //                 </span>{" "}
-    //                 cd hobbies/interests
-    //             </p>
-    //             <p>
-    //                 <span
-    //                     style={{
-    //                         color: "#03ffa4",
-    //                     }}
-    //                 >
-    //                     hobbies/interests <span className="green">(main)</span>{" "}
-    //                     $
-    //                 </span>{" "}
-    //                 ls
-    //             </p>
-    //             <ul>
-    //                 {info.hobbies.map((hobby) => (
-    //                     <li>
-    //                         <Box component={"span"} mr={"1rem"}>
-    //                             {hobby.emoji}
-    //                         </Box>
-    //                         {hobby.label}
-    //                     </li>
-    //                 ))}
-    //             </ul>
-    //         </>
-    //     );
-    // }
+    function educationText() {
+        return (
+            <>
+                <p>
+                    <span
+                        style={{
+                            color: "#03ffa4",
+                        }}
+                    >
+                        geronimoboza $
+                    </span>{" "}
+                    cd education
+                </p>
+                <p>
+                    <span
+                        style={{
+                            color: "#03ffa4",
+                        }}
+                    >
+                        education <span className="green">(main)</span> $
+                    </span>{" "}
+                    ls
+                </p>
+                <ul>
+                    <li>
+                        <i>2014 - ONGOING</i>:{" "}
+                        <strong style={{ color: "#03ffa4" }}>
+                            BACHELOR OF SYSTEMS
+                        </strong>
+                        , FACULTY OF COMPUTER SCIENCE, NATIONAL UNIVERSITY OF LA
+                        PLATA.
+                    </li>
+                    <li>
+                        <i>2020 - 2024</i>:{" "}
+                        <strong style={{ color: "#03ffa4" }}>
+                            UNIVERSITY PROGRAMMER ANALYST
+                        </strong>
+                        . FACULTY OF COMPUTER SCIENCE, NATIONAL UNIVERSITY OF LA
+                        PLATA
+                    </li>
+                    <li>
+                        <i>2020 - ONGOING</i>:{" "}
+                        <strong style={{ color: "#03ffa4" }}>
+                            ANALYST IN INFORMATION AND COMUNICATION TECHNOLOGIES
+                        </strong>
+                        . FACULTY OF COMPUTER SCIENCE, NATIONAL UNIVERSITY OF LA
+                        PLATA
+                    </li>
+                    <li>
+                        <i>2020 - 2020</i>:{" "}
+                        <strong style={{ color: "#03ffa4" }}>
+                            FULL STACK WEB DEVELOPMENT
+                        </strong>
+                        , DIGITAL HOUSE
+                    </li>
+                </ul>
+            </>
+        );
+    }
 
     return (
         <Box>
@@ -155,8 +179,7 @@ const About = () => {
             >
                 <Terminal text={aboutMeText()} />
                 <Terminal text={skillsText()} />
-                {/* 
-            <Terminal text={miscText()} /> */}
+                <Terminal text={educationText()} />
             </Box>
         </Box>
     );
