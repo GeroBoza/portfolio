@@ -11,15 +11,21 @@ export default function Portfolio() {
             description: "(Node.js - Express JS - React JS - MySQL - AWS S3)",
         },
         {
-            image: "/img/starwars.png",
-            live: "https://sw-app-challenge.netlify.app/",
-            title: "Star Wars app Challenge",
-            description: "(Node.js - Express JS - React JS - MySQL - AWS S3)",
-        },
-        {
             image: "/img/zapateriaavenida.png",
             live: "https://www.zapateriaavenida.com/",
             title: "Zapatería Avenida",
+            description: "(Node.js - Express JS - React JS - MySQL - AWS S3)",
+        },
+        {
+            image: "/img/infounlp.png",
+            live: "https://www.info.unlp.edu.ar/",
+            title: "Facultad de Informática UNLP",
+            description: "(Wordpress)",
+        },
+        {
+            image: "/img/starwars.png",
+            live: "https://sw-app-challenge.netlify.app/",
+            title: "Star Wars app Challenge",
             description: "(Node.js - Express JS - React JS - MySQL - AWS S3)",
         },
         {
